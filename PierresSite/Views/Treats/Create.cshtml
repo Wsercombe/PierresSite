@@ -4,11 +4,14 @@
 
 @model PierresSite.Models.Treat
 
-<h4>Add a new task</h4>
+<h4>Add a new treat</h4>
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
+
+  @Html.Label("Select flavor")
+  @Html.DropDownList("TreatId")
   <input type="submit" value="Add new treat" />
 }
 <p>@Html.ActionLink("Show all treats", "Index")</p>
