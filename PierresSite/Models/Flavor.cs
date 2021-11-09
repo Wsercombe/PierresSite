@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+using System.ComponentModel;
 namespace PierresSite.Models
 {
   public class Flavor
@@ -10,6 +10,8 @@ namespace PierresSite.Models
     }
 
     public int FlavorId { get; set; }
+
+    [DisplayName("Flavor Name")]
     public string Description { get; set; }
     public virtual ApplicationUser User { get; set; }
 

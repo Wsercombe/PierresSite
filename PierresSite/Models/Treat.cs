@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace PierresSite.Models
 {
@@ -10,6 +11,7 @@ namespace PierresSite.Models
     }
 
     public int TreatId { get; set; }
+    [DisplayName("Treat Name")]
     public string Name { get; set; }
     public virtual ICollection<FlavorTreat> JoinEntities { get; set; }
   }

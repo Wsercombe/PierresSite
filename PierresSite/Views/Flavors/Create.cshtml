@@ -4,16 +4,25 @@
 
 @model PierresSite.Models.Flavor
 
-<h4>Add a new task</h4>
+<h4>Add a new flavor</h4>
 
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Description)
-  @Html.TextBoxFor(model => model.Description)
+  <div>
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)
+  </div>
 
-  @Html.Label("Select treat")
-  @Html.DropDownList("TreatId")
+  <div>
+    @Html.Label("Select treat")
+    @Html.DropDownList("TreatId")
+  </div>
 
-  <input type="submit" value="Add new flavor" class="btn btn-default" />
+  <div>
+    <input type="submit" value="Add new flavor" class="btn btn-default" />
+  </div>
+
 }
-<p>@Html.ActionLink("Show all flavors", "Index")</p>
+<div>
+  <p>@Html.ActionLink("Show all flavors", "Index")</p>
+</div>
