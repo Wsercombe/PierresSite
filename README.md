@@ -1,4 +1,4 @@
-# Factory
+# Pierre's Site
 
 #### _An application used to store flavors and treats from the user_
 
@@ -29,7 +29,7 @@
 
 ## Description <a id="description"></a>
 
-This web-based application allows a a user to be able to add treats and flavors which have a many to many relationship between the two. This will require authentication in order to log in
+This web-based application allows a user to be able to add treats and flavors which have a many to many relationship between eachother. This will require authentication in order to submit.
 .
 
 ## Setup/Installation Requirements <a id="setup"></a>
@@ -46,7 +46,8 @@ This web-based application allows a a user to be able to add treats and flavors 
 
 ### Scaffold and connect the database
 * Launch the MySQL server with the command `mysql -uroot -p[YOUR-PASSWORD-HERE]`
-* In your terminal, navigate to the production project directory with the command `$ cd Factory\Factory`
+* In your terminal, navigate to the production project directory with the command `$ cd PierresSite\* In your terminal, navigate to the production project directory with the command `$ cd PierresSite\Factory`
+`
 * In your terminal, create a file within the project in which to store your connection string for connecting the project to the database with the command `touch appsettings.json`
 * In your text editor add the following code to the newly created appsettings.json file. *Note that uid and pwd may vary depending on your local MySql configurations.
 ```
